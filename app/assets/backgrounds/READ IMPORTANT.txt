@@ -1,0 +1,1 @@
+This folder must include .mp4,.webm and .jpg of each files which will be background.
