@@ -7,7 +7,6 @@ import {Component, Input, Output, EventEmitter} from 'angular2/core';
                 <source src="{{_mp4Url}}" type="video/mp4">
                 </video>
 
-                <button class="btn btn-primary" id="vidpause">Pause</button>
                 `
 })
 export class AppComponent {
@@ -15,20 +14,20 @@ export class AppComponent {
     
 
     randnum = Math.random();
-    inum = 10;
+    inum = 10; //number of video files
 
     rand1 = Math.round(this.randnum * (this.inum-1)) + 1;
     images = [
-    'volkanoBackground',
-    'diskBackground',
-    'Agile',
-    'Coverr-market-mcu',
-    'Dog-Lovers',
-    'Down',
-    'For_Wes',
-    'Scooooters',
-    'Street-View',
-    'ghostBackground']
+    'x',
+    'x',
+    'x',
+    'x',
+    'x',
+    'x',
+    'x',
+    'x',
+    'x',
+    'x'] //names of the videos without ext.
 
 
     image = this.images[this.rand1]
@@ -37,8 +36,7 @@ export class AppComponent {
     private _webmUrl = "/app/assets/backgrounds/" +this.images[this.rand1]+ ".webm";
     private _mp4Url = "/app/assets/backgrounds/" +this.images[this.rand1]+ ".webm"; 
     constructor(){
-    console.log(this.image);
-    //<source src="/app/assets/backgrounds/" + {{image}} +".webm" type="video/webm">
+    console.log(this.image); //to see which video
     }
 
 }
