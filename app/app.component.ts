@@ -16,7 +16,7 @@ export class AppComponent {
     randnum = Math.random();
     inum = 10; //number of video files
 
-    rand1 = Math.round(this.randnum * (this.inum-1)) + 1;
+    rand1 = Math.round(this.randnum * (this.inum-1));
     images = [
     'x',
     'x',
